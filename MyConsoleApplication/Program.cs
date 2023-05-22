@@ -10,7 +10,9 @@ namespace MyConsoleApplication
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            Console.WriteLine("Hello World.");
+            Console.WriteLine("Feature branch 1 - development 1");
+            Console.WriteLine("Feature branch 1 - development 2");
             Console.ReadKey();
         }
     }
