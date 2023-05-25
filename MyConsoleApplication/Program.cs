@@ -8,7 +8,7 @@ namespace MyConsoleApplication
 {
     class Program
     {
-        enum TransactionType {Buy=1,Sell=-1};
+        enum TransactionType { Buy = 1, Sell = -1 };
 
         static void Main(string[] args)
         {
@@ -27,9 +27,9 @@ namespace MyConsoleApplication
             Console.WriteLine("Buy or Sell?");
             TransactionType transaction;
             string tType = Console.ReadLine();
-            transaction = (TransactionType) Enum.Parse( typeof(TransactionType), tType, true);
+            transaction = (TransactionType)Enum.Parse(typeof(TransactionType), tType, true);
 
-            int sign = tType == "Buy" ? 1: -1; 
+            int sign = tType == "Buy" ? 1 : -1;
             double CV = nominal * origionalPrice * sign;
             Console.WriteLine($"The Currenct Value of your investment is {CV} EUR.");
 
